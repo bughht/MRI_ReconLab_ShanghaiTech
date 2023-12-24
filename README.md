@@ -7,11 +7,14 @@ Iterative SENSE solves linear problem $E\hat{m}=b$ as a least square minization 
 **Gradient Descent:**
 
 Initialize:
+
 $$\begin{aligned}
 m_0&=E^Hb\\
 r_0&=m_0-E^HEm_0\\
 \end{aligned}$$
+
 Iteration:
+
 $$\begin{aligned}
 \alpha_k&=\cfrac{r_k^Tr_k}{r_K^TE^HEr_k}\\
 m_{k+1}&=m_k+\alpha_k r_k\\
