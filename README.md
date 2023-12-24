@@ -45,11 +45,11 @@ $$\bar{b} = E^Hb$$
 **Iteration**
 
 $$\begin{aligned}
-m'_k&=\theta_k+d_k\\
-r_k&=\bar{b}+\mu m'_k\\
+m_k'&=\theta_k+d_k\\
+r_k&=\bar{b}+\mu m_k'\\
 m_{k+1}&=\frac{1}{\mu}(I-E^HE)r_k\\
-\theta'_k&=m_{k+1}-d_k\\
-\theta_{k+1}&=\Psi_{r\Phi/\mu}(\theta'_k)\\
+\theta_k'&=m_{k+1}-d_k\\
+\theta_{k+1}&=\Psi_{r\Phi/\mu}(\theta_k')\\
 d_{k+1}&=d_k-\beta_{k+1}+\theta_{k+1}\\
 \end{aligned}$$
 
